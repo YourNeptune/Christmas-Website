@@ -5,6 +5,9 @@ import NewGift from "../components/NewGift";
 import home_img from "../img/home.png";
 import celebrate_img from "../img/celebrate.png";
 import message_img from "../img/message.png";
+import navbar_logo from "../img/logo.png";
+import googlePlay_img from "../img/aviable1.png";
+import appStore_img from "../img/aviable2.png";
 
 const Home = () => {
   return (
@@ -90,12 +93,42 @@ const Home = () => {
           <input type="email" />
           <button>Send Message</button>
         </div>
-        <img src={message_img} alt="message_img"/>
+        <img src={message_img} alt="message_img" />
       </section>
 
       {/* ===== Footer ===== */}
       <footer>
-        
+        <section>
+          <img src={navbar_logo} alt="navbar_logo" />
+          <p>Christmas</p>
+          <p>
+            This Christmas give <br /> a lot of love
+          </p>
+        </section>
+
+        <section>
+          <h3>Our Services</h3>
+          <ul>
+            <li>Pricing</li>
+            <li>Discounts</li>
+            <li>Shipping mode</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Support</h3>
+          <ul>
+            <li>FAQs</li>
+            <li>Support center</li>
+            <li>Contact Us</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Available On</h3>
+          <img src={googlePlay_img} alt="googlePlay_img" />
+          <img src={appStore_img} alt="appStore_img" />
+        </section>
       </footer>
     </div>
   );
