@@ -2,33 +2,26 @@ import React from "react";
 import "boxicons";
 import navbar_logo from "../img/logo.png";
 
+
 const Navbar = () => {
   return (
-    <div>
-      <section>
+    <div className="Navbar flex">
+      <section className="flex Navbar__logo">
         <img src={navbar_logo} alt="navbar_logo" />
         <p>Christmas</p>
       </section>
 
-      <section>
-        <nav>
-          <ul>
-            <li>
-              <a href="">Home</a>
-            </li>
-            <li>
-              <a href="">Celebrate</a>
-            </li>
-            <li>
-              <a href="">Gifts</a>
-            </li>
-            <li>
-              <a href="">New</a>
-            </li>
-          </ul>
-        </nav>
-
-        <box-icon name="moon"></box-icon>
+      <section className="Navbar__icons flex">
+        <div className="Navbar__icon">
+          <box-icon name="moon" color="hsl(355, 4%, 35%)"></box-icon>
+        </div>
+        <div className="Navbar__icon">
+          <box-icon
+            name="border-all"
+            flip="horizontal"
+            color="hsl(355, 4%, 35%)"
+          ></box-icon>
+        </div>
       </section>
     </div>
   );

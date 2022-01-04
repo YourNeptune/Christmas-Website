@@ -1,4 +1,46 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+/* ===== Color ===== */
+/* ===== Height ===== */
+/* ===== Font and typography ===== */
+/*.5rem = 8px | 1rem = 16px ...*/
+/* ===== Font Weight ===== */
+/* ===== Padding Left ===== */
+/* ===== Margin Bottom ===== */
+/* ===== Z Index ===== */
+.Navbar {
+  width: 100%;
+  position: fixed;
+  background-color: #fff;
+  height: 3.5rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.Navbar__logo {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Navbar__logo img {
+  height: 2.5rem;
+}
+
+.Navbar__icons {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Navbar__icon:last-child {
+  margin-left: 1rem;
+}
+
+/* ===== Base ===== */
 * {
   margin: 0;
   padding: 0;
@@ -10,6 +52,14 @@
 img {
   max-width: 100%;
   height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
 }
 
 /* ===== Reusable CSS Classes ===== */
@@ -28,6 +78,16 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.flex-col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .flex-center {
