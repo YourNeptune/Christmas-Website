@@ -8,13 +8,15 @@ import message_img from "../img/message.png";
 import navbar_logo from "../img/logo.png";
 import googlePlay_img from "../img/aviable1.png";
 import appStore_img from "../img/aviable2.png";
+import { Container } from "react-bootstrap";
+
 
 const Home = () => {
   return (
-    <div>
+    <Container className="">
       {/* ===== Home ===== */}
-      <section className="flex flex-center">
-        <img src={home_img} alt="home_img" className="home__img" />
+      <section className="Home flex-col flex-center ">
+        <img src={home_img} alt="home_img" className="Home__img" />
         <div>
           <h1>
             Merry Christmas and <br /> Happy New Year!
@@ -130,7 +132,7 @@ const Home = () => {
           <img src={appStore_img} alt="appStore_img" />
         </section>
       </footer>
-    </div>
+    </Container>
   );
 };
 

@@ -9,8 +9,10 @@
 /* ===== Margin Bottom ===== */
 /* ===== Z Index ===== */
 .Navbar {
-  width: 100%;
   position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   background-color: #fff;
   height: 3.5rem;
   -webkit-box-pack: justify;
@@ -18,6 +20,7 @@
           justify-content: space-between;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
+  color: #5d5656;
 }
 
 .Navbar__logo {
@@ -34,6 +37,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-size: 1.5rem;
 }
 
 .Navbar__icon:last-child {

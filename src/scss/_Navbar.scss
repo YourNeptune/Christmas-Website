@@ -1,11 +1,14 @@
 .Navbar {
-  width: 100%;
   position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
   background-color: $container-color;
   height: $header-height;
   justify-content: space-between;
   padding-left: $pl-1-5;
   padding-right: $pl-1-5;
+  color: $text-color;
 
   &__logo {
     align-items: center;
@@ -17,6 +20,8 @@
 
   &__icons {
     align-items: center;
+
+    font-size: $biggest-font-size;
   }
   &__icon:last-child {
     margin-left: $mb-1;
